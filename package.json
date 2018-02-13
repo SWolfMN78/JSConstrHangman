@@ -1,0 +1,22 @@
+{
+  "name": "jsconstrhangman",
+  "version": "1.0.0",
+  "description": "Class project to create a hangman command line prompt game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SWolfMN78/JSConstrHangman.git"
+  },
+  "author": "Shawn J. Wolf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SWolfMN78/JSConstrHangman/issues"
+  },
+  "homepage": "https://github.com/SWolfMN78/JSConstrHangman#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
