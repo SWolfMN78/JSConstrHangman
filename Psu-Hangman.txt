@@ -1,0 +1,9 @@
+1) On load display greeting in line then make a new line (\n) load first word.  Below it should be be "_" equal to the number of letters in the word.
+2) Line #1 will display "Pick a letter!" then wait for the user to perform a letter input followed by "Enter".
+	2a) Once the letter is entered run that latter across the word to see if there are any matches.
+		2a1) If there are no valid matches then display "Incorrect, please guess again!" on a new line then reload the screen and wait for input.
+			2a1a) Loop back to 2a and start this loop again.
+		2a2) If the input is a valid match display "Correct!!" and fill in all locations of the match.
+			2a2a) Once matched go back to "2" and wait for the next input by the user.
+		2a3) If the match results in completion of the word...
+				2a2a1) Display message "Great job! You've guessed the word! Let's get a new word!!" -- Go back to #1
