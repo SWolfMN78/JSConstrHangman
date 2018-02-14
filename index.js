@@ -8,4 +8,8 @@ var input = process.argv;
 var action = input[2];
 
 //the following variables allow access to the other js files.
-var words = require("./Words.js");
+var NewWords = require("./Word.js");
+
+var x = new NewWords();
+x.setWord("birds");
+console.log(x.andYourWordIs());
