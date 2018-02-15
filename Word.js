@@ -23,16 +23,21 @@ var NewWord = function() {
             console.log(word);
             console.log(word.substring(1, 2));
 
-
             for (var i = 0; i < word.length; i++) {
+
                 var l = word.substring(i, i + 1);
-                var letter = new NewLetter(l);
+                // console.log(l);
 
-                //console.log(letterArray);
+                // var letter = new NewLetter(l);
+                // console.log(letter);
+                // this.letterArray.push(letter); //trying to push the letter into the array.
 
-                this.letterArray.push(letter); //ush the letter into the array.
+                // this.addLetter = function(letter) {
+                //     this.NewLetter.push(new NewLetter(l));
+                // };  //this is not working either.
+
             }
-            console.log(letterArray);
+            console.log(letterArray); //keeps coming up as undefined with lines 31 to 37
         }
         /* A function that returns a string representing the word. This 
             should call the function on each letter object */
