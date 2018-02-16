@@ -15,36 +15,25 @@
 //the following variables allow access to the other js files.
 var NewLetter = require("./Letter.js");
 
-var NewWord = function() {
+var NewWord = function(word) {
     this.letterArray = []; //make an array of letters
 
     this.setWord = function(word) {
-            //var letters = [];
-            console.log(word);
-            console.log(word.substring(1, 2));
-
             for (var i = 0; i < word.length; i++) {
 
-                var l = word.substring(i, i + 1);
-                // console.log(l);
+                this.l = word.substring(i, i + 1);
 
-                // var letter = new NewLetter(l);
-                // console.log(letter);
-                // this.letterArray.push(letter); //trying to push the letter into the array.
-
-                // this.addLetter = function(letter) {
-                //     this.NewLetter.push(new NewLetter(l));
-                // };  //this is not working either.
-
+                this.letter = new NewLetter(this.l);
+                this.letterArray.push(this.letter); //trying to push the letter into the array.
             }
-            console.log(letterArray); //keeps coming up as undefined with lines 31 to 37
+            console.log(this.letterArray);
         }
         /* A function that returns a string representing the word. This 
             should call the function on each letter object */
     this.andYourWordIs = function() {
         var result = "";
-        for (var i = 0; i < letterArray.length; i++) {
-            result += letterArray[i].DisplayLetter() + " ";
+        for (var i = 0; i < this.letterArray.length; i++) {
+            result += this.letterArray[i].DisplayLetter() + " ";
         }
         return result;
     };
